@@ -21,7 +21,8 @@
     padding: 16px 48px;
     height: 60px;
     font-weight: 300;
-    font-size: 24;
+    font-size: 35;
+    
 }
 
 .navbar a{
@@ -44,6 +45,78 @@
     display: none;
 }
 
+
+
+.hero__section_container{
+    display: flex;
+    flex-direction: column;
+    height: calc(60vh - 60px);
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.hero__section_logo{
+    width: 270px;
+    height: auto;
+}
+
+.hero__section_header{
+    text-align: center;
+    font-size: 175%;
+    font-weight: 300;
+}
+
+.hero__section_input_container{
+    background: white;
+    border-radius: 10px;
+    width: 50%;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+
+}
+
+.input_container_location,
+.input_container_search{
+    border: none;
+    outline: none;
+    padding: 5px;
+
+}
+
+.input_container_search{
+    width: 80%;
+    display: flex;
+}
+
+
+ .hero__section_container_search{
+    width: 65%;
+    display: flex;
+ }   
+
+ .hero__section_container_location{
+    width: 35%;
+    display: flex;
+ }
+
+.location_icon{
+    text-decoration: none;
+    color: lightcoral;
+    padding: 5px;
+    
+}
+
+.search_icon{
+    text-decoration: none;
+    color: grey;
+    border-left: 2px solid #e0e0e0;
+    padding: 5px 5px 5px 10px;
+}
+
 @media only screen and (max-width: 600px) {
     
     .navbar__menu_container .link{
@@ -58,6 +131,61 @@
     .user_icon{
         display:flex;
     }
+
+    .input_container_location{
+        width: 50%;
+    }
+
+    .input_container_search{
+        width: 50%;
+    }
+
+    .hero__section_input_container{
+        flex-direction: column;
+    }
+
+    .search_icon{
+        border-left: none;
+    }
+
+    .search_icon, .location_icon{
+        padding: 5px;
+    }
+
+    .hero__section_container{
+        height: calc(80vh - 60px);
+    }
+
+    .hero__section_input_container{
+        background: transparent;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    
+    }
+
+    .hero__section_container_location,
+    .hero__section_container_search{
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    .input_container_location, 
+    .input_container_search{
+        width: 90%;
+        padding: 10px;
+        border: none;
+        
+    }
+
+    
+
+    
+
+
 
 }
 
