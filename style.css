@@ -117,6 +117,50 @@
     padding: 5px 5px 5px 10px;
 }
 
+.container{
+    margin: 48px auto;
+    width: 80%;
+}
+
+.we_offer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.we_offer .card{
+    border-radius: 10px;
+    color: black;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    transition: 300ms all ease-out;
+}
+
+.we_offer .card img{
+    width: 350px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.we_offer .card h2{
+    font-weight: 400;
+    font-size: 17px;
+    padding: 10px 10px 0px 10px;
+
+}
+
+.we_offer .card p{
+    font-size: 13px;
+    padding: 0px 10px 10px 10px;
+}
+
+.we_offer .card:hover{
+    transform: scale(1.05);
+}
+
 @media only screen and (max-width: 600px) {
     
     .navbar__menu_container .link{
