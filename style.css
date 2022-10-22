@@ -88,7 +88,7 @@
 }
 
 .input_container_search{
-    width: 80%;
+    width: 72%;
     display: flex;
 }
 
@@ -202,18 +202,13 @@
     background-size: cover;
     border-radius: 10px;
     position: relative;
-    
-    
-
-
-    
-   
-    
+    cursor: pointer;    
 
 }
 
 .card1{
     background-image: url('images/collection1.jpg');
+    
 }
 
 .card2{
@@ -258,6 +253,62 @@
     font-weight: 400;
     font-size: 15px;
 }
+
+.localities{
+    width: 72%;
+}
+
+.localities_card_container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 2rem;
+    
+}
+
+.localcard{
+    width: 357px;
+    height: 80px;
+    border: 1px solid rgb(219, 219, 219);
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    box-shadow: rgb(28 28 28 / 8%) 0px 1.42623px 2.85246px;
+
+
+}
+
+.localcard:hover{
+    box-shadow: rgb(28 28 28 / 20%) 0px 2px 3px;
+}
+
+.localcard p, span{
+    padding: 3px;
+    margin-left: 10px;    
+}
+
+.localcard p{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.localcard span{
+    font-weight: 300;
+}
+
+.localities h1{
+    font-weight: 300;
+    font-size: 36px;
+}
+
+
+
+
 
 
 
