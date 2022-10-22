@@ -306,6 +306,65 @@
     font-size: 36px;
 }
 
+.get_the_app{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 251, 247);
+    padding: 48px 48px;
+}
+
+.get_the_app .semicontainer{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+
+}
+
+.get_the_app .semicontainer .left{
+    flex: 2;
+}
+
+.get_the_app .semicontainer .left img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.get_the_app .semicontainer .right{
+    flex: 3;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.right h1{
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.right p{
+    font-size: 14px;
+}
+
+.semicontainer .right .radio_buttons_container{
+    display: flex;
+    gap: 16px;
+    
+}
+
+
+.semicontainer .right .radio_buttons_container div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
 
 
 
