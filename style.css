@@ -70,7 +70,7 @@
 .hero__section_input_container{
     background: white;
     border-radius: 10px;
-    width: 50%;
+    width: 60%;
     padding: 10px;
     justify-content: center;
     align-items: center;
@@ -92,14 +92,17 @@
     display: flex;
 }
 
+.input_container_search input{
+    width: 700px;
+}
 
  .hero__section_container_search{
-    width: 65%;
+    width: 70%;
     display: flex;
  }   
 
  .hero__section_container_location{
-    width: 35%;
+    width: 30%;
     display: flex;
  }
 
@@ -327,11 +330,17 @@
 
 .get_the_app .semicontainer .left{
     flex: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
 }
 
 .get_the_app .semicontainer .left img{
-    width: 100%;
+    width: 75%;
     object-fit: cover;
+    margin-top: 20px;
+    
 }
 
 .get_the_app .semicontainer .right{
@@ -344,16 +353,19 @@
 
 .right h1{
     font-weight: 500;
-    font-size: 32px;
+    font-size: 40px;
 }
 
 .right p{
-    font-size: 14px;
+    font-size: 16px;
+    flex-wrap: wrap;
+    font-weight: 300;
 }
 
 .semicontainer .right .radio_buttons_container{
     display: flex;
-    gap: 16px;
+    gap: 35px;
+    flex-wrap: wrap;
     
 }
 
@@ -366,8 +378,115 @@
 }
 
 
+.semicontainer .right .radio_buttons_container div input{
+    height: 20px;
+    width: 20px;
+    accent-color: rgb(238, 79, 95);
+}
+
+.semicontainer .right .radio_buttons_container div label{
+    font-weight: 300;
+}
+
+.semicontainer .right .input_container{
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.input_container input,
+.input_container button{
+    padding: 10px 12px;
+    
+}
+
+.input_container input{
+    border-radius: 5px;
+    border: 1px solid rgb(198, 198, 198);
+    outline: none;
+    flex: auto;
+}
+
+.input_container button{
+  border-radius: 5px;  
+  background-color: rgb(238, 79, 95);
+  outline: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+
+.semicontainer .right .download_app_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.download_app_container h5{
+    font-weight: 300;
+    color: gray;
+    margin-bottom: 16px;
+}
+
+.download_app_container div{
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.download_app_container div img{
+    width: 130px;
+    height: auto;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1300px) {
+
+    .get_the_app .semicontainer .left{
+        flex: 1;
+    }
 
 
+
+    .get_the_app .semicontainer .right{
+        flex: 1;
+    }
+
+    
+    
+}
+
+@media only screen and (max-width: 900px){
+    
+    .get_the_app{
+        padding: 32px;
+    }
+
+    .get_the_app .semicontainer{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .get_the_app{
+        padding: 49px 0px;
+    }
+
+    .get_the_app .semicontainer{
+        width: 80%;
+        flex-direction: column;
+    }
+
+    .get_the_app .semicontainer .left{
+        justify-content: center;
+    }
+
+    .get_the_app .semicontainer .left img{
+        margin-top: none;
+    }
+}
 
 
 
